@@ -17,7 +17,7 @@ export class CatalogService {
    }
 
    getProducts(){
-     return this.http.get("http://localhost:8080/magento/rest/all/V1/products?searchCriteria=all?accept:application/json");
+     return JSON.parse(this.http.get("http://localhost:8080/magento/rest/all/V1/products?searchCriteria=all?accept:application/json"));
    }
    ///accept:application/json
 }
