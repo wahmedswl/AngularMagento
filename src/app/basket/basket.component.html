@@ -1,0 +1,21 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>SKU</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of items" >
+      <td>{{product.sku}}</td>
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+      <td>{{product.status}}</td>
+      <td>
+        <button class="btn btn-sm btn-primary" (click)="remove(product)">Remove</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

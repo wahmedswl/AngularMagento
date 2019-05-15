@@ -1,0 +1,29 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>SKU</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Status</th>
+      <th>Type id</th>
+      <th>Created at</th>
+      <th>Updated at</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products" >
+      <td>{{product.id}}</td>
+      <td>{{product.sku}}</td>
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>s
+      <td>{{product.status}}</td>
+      <td>{{product.type_id}}</td>
+      <td>{{product.created_at}}</td>
+      <td>{{product.updated_at}}</td>
+      <td>
+        <button class="btn btn-sm btn-primary" (click)="add(product)">Add to cart</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
