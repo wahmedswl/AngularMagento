@@ -23,6 +23,7 @@ export class BasketComponent implements OnInit {
   remove(product:Product)
   {
     this.items.splice(this.items.findIndex(data => data==product),1);
+    this.basketService.deletefromCart(product);
   }
 
 }

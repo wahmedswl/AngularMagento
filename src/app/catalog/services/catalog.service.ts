@@ -18,7 +18,7 @@ export class CatalogService {
    private coreUrl:string;
 
    constructor(private http:HttpClient) {
-        this.coreUrl="http://localhost:8080/magento";
+        this.coreUrl="http://localhost:8080/magento3";
    }
 
     getProducts(){
