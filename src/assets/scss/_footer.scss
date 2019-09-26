@@ -1,0 +1,87 @@
+/* footer section - start
+==================================================================================================== */
+.footer-section {
+	position: relative;
+	.title-text {
+		font-size: 16px;
+		color: $pure-black;
+		margin-bottom: 30px;
+		font-weight: $fw-bold;
+	}
+	.footer-content {
+		.useful-links {
+			>ul {
+				>li {
+					margin-bottom: 10px;
+					&:last-child {
+						margin-bottom: 0px !important;
+					}
+					>a {
+						font-size: 16px;
+						padding-left: 15px;
+						position: relative;
+						color: $default-color;
+						&:before {
+							top: 3px;
+							left: 0px;
+							line-height: 1;
+							font-size: 16px;
+							content: '\f0da';
+							font-weight: 900;
+							position: absolute;
+							color: $default-pink;
+							font-family: 'Font Awesome 5 Pro';
+						}
+
+						&:hover {
+							color: $default-pink;
+						}
+					}
+				}
+			}
+		}
+	}
+	.footer-bottom {
+		z-index: 1;
+		position: relative;
+		padding: 25px 30px;
+		border-radius: 15px;
+		background-color: $pure-white;
+		box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+		.footer-menu {
+			>ul {
+				>li {
+					margin-right: 30px;
+					&:last-child {
+						margin-right: 0px !important;
+					}
+					>a {
+						font-size: 14px;
+						color: $default-color;
+						font-family: $body-font;
+						font-weight: $fw-semibold;
+						&:hover {
+							color: $default-pink;
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+
+		.payment-card {
+			margin: -2px 0px;
+			text-align: right;
+		}
+
+		.person-image {
+			z-index: -1;
+			right: 0px;
+			bottom: 76px;
+			width: 360px;
+			position: absolute;
+		}
+	}
+}
+/* footer section - end
+==================================================================================================== */
